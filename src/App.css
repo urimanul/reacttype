@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+.container,
+.left-content {
+  min-height: 530px;
+}
+
+.left-content {
+  display: inline-block;
+  width: 180px;
+  padding: 0 10px 10px;
+  background-color: rgba(191, 191, 191, 0.15);
+  box-shadow: -5px 0 14px -8px rgba(0, 0, 0, 0.25) inset;
+}
+
+.right-content {
+  position: absolute;
+  right: 0;
+  left: 220px;
+  top: 0;
+  height: 100%;
+}
+
+sup {
+  font-size: 0.8em;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.right-content .sub-title {
+  font-size: 120%;
+  color: rgba(152, 152, 152, 0.8);
+}
+
+.title-container {
+  min-height: 140px;
+  margin-bottom: 10px;
+}
+
+.title-container .country-name {
+  font-size: 240%;
+  font-weight: bold;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+
+.title-container > div:not(.flag) {
+  margin-left: 204px;
+}
+
+.stats {
+  display: table;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.stats > div {
+  display: table-cell;
+  text-align: center;
+  border: 1px solid rgba(191, 191, 191, 0.25);
+  padding: 20px 0 25px;
+  width: 33%;
+}
+
+.stats > div:first-child,
+.stats > div:last-child {
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.stats .stat-value {
+  font-size: 200%;
+}
+
+#tabpanel {
+  margin-top: 10px;
+}
+
+#tabpanel .dx-multiview-wrapper {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+#tabpanel .tab-panel-title {
+  font-size: 120%;
+  font-weight: 500;
+}
+
+#tabpanel .dx-multiview-item-content {
+  padding: 20px 0 22px;
+  min-height: 178px;
+  position: relative;
+}
+
+#tabpanel .right-content {
+  top: 15px;
+  left: 202px;
+}
+
+#tabpanel .stats {
+  width: 398px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(191, 191, 191, 0.25);
+}
+
+#tabpanel .stats > div {
+  padding: 7px 0;
+  text-align: left;
+  border: 0;
+}
+
+#tabpanel .stats > div:first-child {
+  width: 40%;
+}
+
+#tabpanel .stats > div:not(:first-child) {
+  width: 30%;
+}
+
+.flag {
+  width: 172px;
+  max-height: 122px;
+  border: 1px solid rgba(191, 191, 191, 0.25);
+  float: left;
+  margin: 0 30px 10px 0;
+}
+
+.left-content .dx-treeview-node.dx-state-selected > .dx-item > .dx-item-content {
+  font-weight: 500;
+}
+
+
+.dx-popup-normal {  
+  border: 1px solid #222 !important;  
+  border-radius: 5px !important;  
+  /*background-color: lightblue !important;*/
+}  
+
+
+.dx-popup-title {
+  font-family: 'Verdana';
+  font-weight: 800;
+  font-size: 20px;
+  color: #336699;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+.dx-popup-content {
+  font-family: 'Verdana';
+  font-weight: 400;
+  font-size: 14px;
+  color: #336699;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  text-align: left;
+  /*background-color: cadetblue !important;*/
+}
+
+.dx-dialog-button {
+  color: azure;
+  /*background-color: #336699 !important;
+  border-color: #336699 !important;*/
+  background-color: lightblue !important;
+  border-color: lightblue !important;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.dx-dialog-button:hover {
+  color: #FFFFFF;
+  background-color: darkslategray !important;
+  border-color: darkslategray !important;
+  /*background-color: #E8F3FF !important;
+  border-color: #E8F3FF !important;*/
+}
+
+
+#chart-demo {
+  height: 600px;
+}
+
+#radarChart {
+  height: 500px;
+}
+
+#chart-demo > .center {
+  text-align: center;
+}
+
+#chart-demo > .center > div,
+#chart-demo > .center > .dx-widget {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.long-title h3 {
+  font-family: 'Segoe UI Light', 'Helvetica Neue Light', 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana;
+  font-weight: 200;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+#employee-info .employee-photo {
+  height: 100px;
+  float: left;
+  padding: 20px;
+}
+
+#employee-info .employee-notes {
+  padding-top: 20px;
+  text-align: justify;
+}
+
+.dark #employee-info .employee-notes {
+  color: rgb(181, 181, 181);
+}
+
+.home,
+.reports,
+.products,
+.team,
+.reports {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
